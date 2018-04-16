@@ -6,34 +6,25 @@ package com.application.model;
 
 public class Attributes {
 
-    String assemblyRequired;
-    String paperWoodIndicator;
-    String productUrlText;
+    private final String assemblyRequired;
+    private final String paperWoodIndicator;
+    private final String productUrlText;
 
-    public Attributes() {
+    public Attributes(String assemblyRequired, String paperWoodIndicator, String productUrlText) {
+        this.assemblyRequired = assemblyRequired;
+        this.paperWoodIndicator = paperWoodIndicator;
+        this.productUrlText = productUrlText;
     }
 
     public String getAssemblyRequired() {
         return assemblyRequired;
     }
 
-    public void setAssemblyRequired(String assemblyRequired) {
-        this.assemblyRequired = assemblyRequired;
-    }
-
     public String getPaperWoodIndicator() {
         return paperWoodIndicator;
     }
 
-    public void setPaperWoodIndicator(String paperWoodIndicator) {
-        this.paperWoodIndicator = paperWoodIndicator;
-    }
-
     public String getProductUrlText() {
         return productUrlText;
-    }
-
-    public void setProductUrlText(String productUrlText) {
-        this.productUrlText = productUrlText;
     }
 }
