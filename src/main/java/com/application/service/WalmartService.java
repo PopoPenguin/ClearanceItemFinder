@@ -16,7 +16,7 @@ public class WalmartService {
     RestTemplate restTemplate;
 
     public Item getItem(){
-        return restTemplate.getForObject("http://api.walmartlabs.com/v1/items/12417832?apiKey=79x6daurxvrkup2ujkb2tz6a&format=json", Item.class);
+        return restTemplate.getForObject("http://api.walmartlabs.com/v1/items?apiKey=79x6daurxvrkup2ujkb2tz6a&upc=035000521019", Item.class);
     }
 
 }
