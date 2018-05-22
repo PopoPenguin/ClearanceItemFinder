@@ -1,6 +1,8 @@
 package com.application.model;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 import java.util.Map;
 
@@ -10,7 +12,9 @@ import java.util.Map;
 
 public class ImageEntities {
 
-    Map <String,String>
+    ImageEntities(@JsonProperty("Data")Map<String, String> Data){
+
+    }
 
 
 }
