@@ -1,8 +1,12 @@
 package com.application.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 /**
  * created by Jialor Cheung on 5/22/18
  */
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 
 public class GiftOption {
 

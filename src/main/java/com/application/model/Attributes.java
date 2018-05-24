@@ -1,8 +1,13 @@
 package com.application.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 /**
  * created by Jialor Cheung on 4/10/18
  */
+
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 
 public class Attributes {
 

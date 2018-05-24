@@ -51,7 +51,14 @@ public class Item {
     public Item() {
     }
 
-    public Item(Integer itemId, Integer parentItemId, String name, Integer msrp, Integer salePrice, String upc, String categoryPath, String shortDescription, String longDescription, String brandName, String thumbnailImage, String mediumImage, String largeImage, String productTrackingUrl, Boolean ninetySevenCentShipping, String size, String color, Boolean marketplace, Boolean shipToStore, Boolean freeShipToStore, String modelNumber, String productUrl, String customerRating, Integer numReviews, String customerRatingImage, String categoryNode, Boolean bundle, Boolean clearance, Boolean preOrder, String stock, Boolean freight, Attributes attributes, String addToCartUrl, String affiliateAddToCartUrl, Boolean freeShippingOver50Dollars, Boolean availableOnline, ImageEntities imageEntities, GiftOption giftOption) {
+    public Item(Integer itemId, Integer parentItemId, String name, Integer msrp, Integer salePrice, String upc,
+                String categoryPath, String shortDescription, String longDescription, String brandName,
+                String thumbnailImage, String mediumImage, String largeImage, String productTrackingUrl,
+                Boolean ninetySevenCentShipping, String size, String color, Boolean marketplace, Boolean shipToStore,
+                Boolean freeShipToStore, String modelNumber, String productUrl, String customerRating, Integer numReviews,
+                String customerRatingImage, String categoryNode, Boolean bundle, Boolean clearance, Boolean preOrder,
+                String stock, Boolean freight, Attributes attributes, String addToCartUrl, String affiliateAddToCartUrl,
+                Boolean freeShippingOver50Dollars, Boolean availableOnline, ImageEntities imageEntities, GiftOption giftOption) {
         this.itemId = itemId;
         this.parentItemId = parentItemId;
         this.name = name;
