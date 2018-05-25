@@ -1,6 +1,7 @@
 package com.application.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * created by Jialor Cheung on 4/10/18
@@ -15,7 +16,7 @@ public class Attributes {
     private final String paperWoodIndicator;
     private final String productUrlText;
 
-    public Attributes(String assemblyRequired, String paperWoodIndicator, String productUrlText) {
+    public Attributes(@JsonProperty("id")String assemblyRequired, @JsonProperty("id")String paperWoodIndicator, @JsonProperty("id")String productUrlText) {
         this.assemblyRequired = assemblyRequired;
         this.paperWoodIndicator = paperWoodIndicator;
         this.productUrlText = productUrlText;

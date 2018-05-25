@@ -1,6 +1,7 @@
 package com.application.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * created by Jialor Cheung on 5/22/18
@@ -14,7 +15,7 @@ public class GiftOption {
     Boolean allowGiftMessage;
     Boolean allowGiftReceipt;
 
-    public GiftOption(Boolean allowGiftWrap, Boolean allowGiftMessage, Boolean allowGiftReceipt) {
+    public GiftOption(@JsonProperty("id")Boolean allowGiftWrap, @JsonProperty("id")Boolean allowGiftMessage, @JsonProperty("id")Boolean allowGiftReceipt) {
         this.allowGiftWrap = allowGiftWrap;
         this.allowGiftMessage = allowGiftMessage;
         this.allowGiftReceipt = allowGiftReceipt;
