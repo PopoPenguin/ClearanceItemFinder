@@ -545,4 +545,6 @@ public class Item {
     public void setBestMarketplacePrice(BestMarketplacePrice bestMarketplacePrice) {
         this.bestMarketplacePrice = bestMarketplacePrice;
     }
+
+
 }

@@ -11,17 +11,20 @@ import java.util.ArrayList;
 @JsonIgnoreProperties (ignoreUnknown = true)
 public class Items {
 
-    ArrayList <Item> Items;
+    Items [] Items;
 
-    public Items(ArrayList<Item> items) {
+    public Items() {
+    }
+
+    public Items(com.application.model.Items[] items) {
         Items = items;
     }
 
-    public ArrayList<Item> getItems() {
+    public com.application.model.Items[] getItems() {
         return Items;
     }
 
-    public void setItems(ArrayList<Item> items) {
+    public void setItems(com.application.model.Items[] items) {
         Items = items;
     }
 }
