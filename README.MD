@@ -5,12 +5,12 @@ retailers RESTful APIs. The data is stored into a MySQL database and periodicall
 
 Please note: This API is in active development.
 
-##Motivation
+## Motivation
 I get much satisfaction at finding bargain deals. I use [Slickdeals](https://slickdeals.net/)  in conjuction with
 [Brickseek](https://brickseek.com/) to find and locate these deals but it is a lot of perusing. I want to create an app that 
 does the initial search for clearance items for me and categorizing those deals. 
 
-##Things to implement
+## Things to implement
 * Database storage and updating of pricing of items
 * Categorize database items
 * Percent Discount Indicator
