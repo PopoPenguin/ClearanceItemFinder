@@ -63,7 +63,18 @@ public class Item {
     public Item() {
     }
 
-    public Item(Integer itemId, Integer parentItemId, String name, Double msrp, Double salePrice, String upc, String categoryPath, String categoryNode, String shortDescription, String longDescription, String brandName, String thumbnailImage, String mediumImage, String largeImage, String productTrackingUrl, Boolean ninetySevenCentShipping, Double standardShipRate, Double twoThreeDayShippingRate, String size, String color, Boolean marketplace, String sellerInfo, Boolean shipToStore, Boolean freeShipToStore, String modelNumber, String productUrl, Boolean availableOnline, String stock, String customerRating, String customerRatingImage, Integer numReviews, Boolean clearance, Boolean preOrder, String preOrderShipsOn, String offerType, Integer rhid, Boolean bundle, Attributes attributes, String addToCartUrl, String affiliateAddToCartUrl, Boolean freeShippingOver50Dollars, String gender, String age, ImageEntities imageEntities, Boolean isTwoDayShippingEligible, GiftOption giftOption, BestMarketplacePrice bestMarketplacePrice, Boolean freight) {
+    public Item(@JsonProperty("itemId")Integer itemId, @JsonProperty("parentItemId")Integer parentItemId, @JsonProperty("name")String name, @JsonProperty("msrp")Double msrp, @JsonProperty("salePrice")Double salePrice, @JsonProperty("upc")String upc,
+                @JsonProperty("categoryPath")String categoryPath, @JsonProperty("shortDescription")String shortDescription, @JsonProperty("longDescription")String longDescription, @JsonProperty("brandName")String brandName,
+                @JsonProperty("thumbnailImage")String thumbnailImage, @JsonProperty("mediumImage")String mediumImage, @JsonProperty("largeImage")String largeImage, @JsonProperty("productTrackingUrl")String productTrackingUrl,
+                @JsonProperty("ninetySevenCentShipping")Boolean ninetySevenCentShipping, @JsonProperty("size")String size, @JsonProperty("color")String color, @JsonProperty("marketplace")Boolean marketplace, @JsonProperty("shipToStore")Boolean shipToStore,
+                @JsonProperty("freeShipToStore")Boolean freeShipToStore, @JsonProperty("modelNumber")String modelNumber, @JsonProperty("productUrl")String productUrl, @JsonProperty("customerRating")String customerRating, @JsonProperty("numReviews")Integer numReviews,
+                @JsonProperty("customerRatingImage")String customerRatingImage, @JsonProperty("categoryNode")String categoryNode, @JsonProperty("bundle")Boolean bundle, @JsonProperty("clearance")Boolean clearance, @JsonProperty("preOrder")Boolean preOrder,
+                @JsonProperty("stock")String stock, @JsonProperty("freight")Boolean freight, @JsonProperty("attributes")Attributes attributes, @JsonProperty("addToCartUrl")String addToCartUrl, @JsonProperty("affiliateAddToCartUrl")String affiliateAddToCartUrl,
+                @JsonProperty("freeShippingOver50Dollars")Boolean freeShippingOver50Dollars, @JsonProperty("availableOnline")Boolean availableOnline, @JsonProperty("imageEntities")ImageEntities imageEntities, @JsonProperty("giftOption")GiftOption giftOption,
+                @JsonProperty("standardShipRate")Double standardShipRate,@JsonProperty("twoThreeDayShippingRate") Double twoThreeDayShippingRate, @JsonProperty("sellerInfo")String sellerInfo, @JsonProperty("preOrderShipsOn")String preOrderShipsOn,
+                @JsonProperty("offerType")String offerType, @JsonProperty("rhid")Integer rhid, @JsonProperty("gender")String gender,@JsonProperty("age") String age,
+                @JsonProperty("isTwoDayShippingEligible")Boolean isTwoDayShippingEligible, @JsonProperty("bestMarketplacePrice")BestMarketplacePrice bestMarketplacePrice){
+
         this.itemId = itemId;
         this.parentItemId = parentItemId;
         this.name = name;
@@ -112,54 +123,6 @@ public class Item {
         this.giftOption = giftOption;
         this.bestMarketplacePrice = bestMarketplacePrice;
         this.freight = freight;
-    }
-
-    public Item(@JsonProperty("itemId")Integer itemId, @JsonProperty("parentItemId")Integer parentItemId, @JsonProperty("name")String name, @JsonProperty("msrp")Double msrp, @JsonProperty("salePrice")Double salePrice, @JsonProperty("upc")String upc,
-                @JsonProperty("categoryPath")String categoryPath, @JsonProperty("shortDescription")String shortDescription, @JsonProperty("longDescription")String longDescription, @JsonProperty("brandName")String brandName,
-                @JsonProperty("thumbnailImage")String thumbnailImage, @JsonProperty("mediumImage")String mediumImage, @JsonProperty("largeImage")String largeImage, @JsonProperty("productTrackingUrl")String productTrackingUrl,
-                @JsonProperty("ninetySevenCentShipping")Boolean ninetySevenCentShipping, @JsonProperty("size")String size, @JsonProperty("color")String color, @JsonProperty("marketplace")Boolean marketplace, @JsonProperty("shipToStore")Boolean shipToStore,
-                @JsonProperty("freeShipToStore")Boolean freeShipToStore, @JsonProperty("modelNumber")String modelNumber, @JsonProperty("productUrl")String productUrl, @JsonProperty("customerRating")String customerRating, @JsonProperty("numReviews")Integer numReviews,
-                @JsonProperty("customerRatingImage")String customerRatingImage, @JsonProperty("categoryNode")String categoryNode, @JsonProperty("bundle")Boolean bundle, @JsonProperty("clearance")Boolean clearance, @JsonProperty("preOrder")Boolean preOrder,
-                @JsonProperty("stock")String stock, @JsonProperty("freight")Boolean freight, @JsonProperty("attributes")Attributes attributes, @JsonProperty("addToCartUrl")String addToCartUrl, @JsonProperty("affiliateAddToCartUrl")String affiliateAddToCartUrl,
-                @JsonProperty("freeShippingOver50Dollars")Boolean freeShippingOver50Dollars, @JsonProperty("availableOnline")Boolean availableOnline, @JsonProperty("imageEntities")ImageEntities imageEntities, @JsonProperty("giftOption")GiftOption giftOption) {
-        this.itemId = itemId;
-        this.parentItemId = parentItemId;
-        this.name = name;
-        this.msrp = msrp;
-        this.salePrice = salePrice;
-        this.upc = upc;
-        this.categoryPath = categoryPath;
-        this.shortDescription = shortDescription;
-        this.longDescription = longDescription;
-        this.brandName = brandName;
-        this.thumbnailImage = thumbnailImage;
-        this.mediumImage = mediumImage;
-        this.largeImage = largeImage;
-        this.productTrackingUrl = productTrackingUrl;
-        this.ninetySevenCentShipping = ninetySevenCentShipping;
-        this.size = size;
-        this.color = color;
-        this.marketplace = marketplace;
-        this.shipToStore = shipToStore;
-        this.freeShipToStore = freeShipToStore;
-        this.modelNumber = modelNumber;
-        this.productUrl = productUrl;
-        this.customerRating = customerRating;
-        this.numReviews = numReviews;
-        this.customerRatingImage = customerRatingImage;
-        this.categoryNode = categoryNode;
-        this.bundle = bundle;
-        this.clearance = clearance;
-        this.preOrder = preOrder;
-        this.stock = stock;
-        this.freight = freight;
-        this.attributes = attributes;
-        this.addToCartUrl = addToCartUrl;
-        this.affiliateAddToCartUrl = affiliateAddToCartUrl;
-        this.freeShippingOver50Dollars = freeShippingOver50Dollars;
-        this.availableOnline = availableOnline;
-        this.imageEntities = imageEntities;
-        this.giftOption = giftOption;
     }
 
     public Integer getItemId() {
