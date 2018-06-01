@@ -509,5 +509,57 @@ public class Item {
         this.bestMarketplacePrice = bestMarketplacePrice;
     }
 
-
+    @Override
+    public String toString() {
+        return "Item{" +
+                "itemId=" + itemId +
+                ", parentItemId=" + parentItemId +
+                ", name='" + name + '\'' +
+                ", msrp=" + msrp +
+                ", salePrice=" + salePrice +
+                ", upc='" + upc + '\'' +
+                ", categoryPath='" + categoryPath + '\'' +
+                ", categoryNode='" + categoryNode + '\'' +
+                ", shortDescription='" + shortDescription + '\'' +
+                ", longDescription='" + longDescription + '\'' +
+                ", brandName='" + brandName + '\'' +
+                ", thumbnailImage='" + thumbnailImage + '\'' +
+                ", mediumImage='" + mediumImage + '\'' +
+                ", largeImage='" + largeImage + '\'' +
+                ", productTrackingUrl='" + productTrackingUrl + '\'' +
+                ", ninetySevenCentShipping=" + ninetySevenCentShipping +
+                ", standardShipRate=" + standardShipRate +
+                ", twoThreeDayShippingRate=" + twoThreeDayShippingRate +
+                ", size='" + size + '\'' +
+                ", color='" + color + '\'' +
+                ", marketplace=" + marketplace +
+                ", sellerInfo='" + sellerInfo + '\'' +
+                ", shipToStore=" + shipToStore +
+                ", freeShipToStore=" + freeShipToStore +
+                ", modelNumber='" + modelNumber + '\'' +
+                ", productUrl='" + productUrl + '\'' +
+                ", availableOnline=" + availableOnline +
+                ", stock='" + stock + '\'' +
+                ", customerRating='" + customerRating + '\'' +
+                ", customerRatingImage='" + customerRatingImage + '\'' +
+                ", numReviews=" + numReviews +
+                ", clearance=" + clearance +
+                ", preOrder=" + preOrder +
+                ", preOrderShipsOn='" + preOrderShipsOn + '\'' +
+                ", offerType='" + offerType + '\'' +
+                ", rhid=" + rhid +
+                ", bundle=" + bundle +
+                ", attributes=" + attributes +
+                ", addToCartUrl='" + addToCartUrl + '\'' +
+                ", affiliateAddToCartUrl='" + affiliateAddToCartUrl + '\'' +
+                ", freeShippingOver50Dollars=" + freeShippingOver50Dollars +
+                ", gender='" + gender + '\'' +
+                ", age='" + age + '\'' +
+                ", imageEntities=" + imageEntities +
+                ", isTwoDayShippingEligible=" + isTwoDayShippingEligible +
+                ", giftOption=" + giftOption +
+                ", bestMarketplacePrice=" + bestMarketplacePrice +
+                ", freight=" + freight +
+                '}';
+    }
 }

@@ -1,8 +1,10 @@
 package com.application.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * created by Jialor Cheung on 5/24/18
@@ -11,20 +13,28 @@ import java.util.ArrayList;
 @JsonIgnoreProperties (ignoreUnknown = true)
 public class Items {
 
-    Items [] Items;
+    private Item[] items;
+
 
     public Items() {
     }
 
-    public Items(com.application.model.Items[] items) {
-        Items = items;
+    public Items(@JsonProperty("items")Item[] items) {
+        this.items = items;
     }
 
-    public com.application.model.Items[] getItems() {
-        return Items;
+    public Item[] getItems() {
+        return items;
     }
 
-    public void setItems(com.application.model.Items[] items) {
-        Items = items;
+    public void setItems(Item[] items) {
+        this.items = items;
+    }
+
+    @Override
+    public String toString() {
+        return "Items{" +
+                "Items=" + Arrays.toString(items) +
+                '}';
     }
 }

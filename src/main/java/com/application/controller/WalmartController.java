@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * created by Jialor Cheung on 5/20/18
  */
-
+@RequestMapping("/items")
 @Controller
 public class WalmartController {
 
