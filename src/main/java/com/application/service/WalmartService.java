@@ -25,13 +25,13 @@ public class WalmartService {
     @Autowired
     RestTemplate restTemplate;
 
-    public Items getItems(String categoryAPI, String isPublisherId, String format, String apikey, String upc, String ids){
+    public Items getItems(String categoryAPI, String isPublisherId, String format, String apiKey, String upc, String ids){
         String url = "http://api.walmartlabs.com/v1/feeds/clearance?format=json&apikey={apikey}&amp;categoryId=3944";
         Items fullResponse = restTemplate.getForObject(url , Items.class);
         return fullResponse;
         //return restTemplate.getForObject("http://api.walmartlabs.com/v1/feeds/clearance?format=json&apikey={apikey}&amp;categoryId=3944", Items.class);
 
-//        GenericWalmartParams genericWalmartParams = new GenericWalmartParams( categoryAPI, isPublisherId, format, apikey, upc, ids);
+//        GenericWalmartParams genericWalmartParams = new GenericWalmartParams( categoryAPI, isPublisherId, format, apiKey, upc, ids);
 //        return restTemplate.getForObject(genericWalmartParams.domainParams(), Items.class);
 
     }

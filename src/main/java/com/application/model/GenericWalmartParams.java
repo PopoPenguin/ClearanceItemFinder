@@ -10,15 +10,15 @@ public class GenericWalmartParams {
     String categoryAPI = "/feeds/clearance";
     String isPublisherId;
     String format = "json";
-    String apikey = "{apikey}";
+    String apiKey = "{apiKey}";
     String upc = "035000521019";
     String ids = "744021327";
 
-    public GenericWalmartParams(String categoryAPI, String isPublisherId, String format, String apikey, String upc, String ids) {
+    public GenericWalmartParams(String categoryAPI, String isPublisherId, String format, String apiKey, String upc, String ids) {
         this.categoryAPI = categoryAPI;
         this.isPublisherId = isPublisherId;
         this.format = format;
-        this.apikey = apikey;
+        this.apiKey = apiKey;
         this.upc = upc;
         this.ids = ids;
     }
@@ -55,12 +55,12 @@ public class GenericWalmartParams {
         this.format = format;
     }
 
-    public String getApikey() {
-        return apikey;
+    public String getApiKey() {
+        return apiKey;
     }
 
-    public void setApikey(String apikey) {
-        this.apikey = apikey;
+    public void setApiKey(String apiKey) {
+        this.apiKey = apiKey;
     }
 
     public String getUpc() {
@@ -89,8 +89,8 @@ public class GenericWalmartParams {
         if (null != getFormat()) {
             sb.append("?format=").append(getFormat());
         }
-        if (null != getApikey()){
-            sb.append("&apikey=").append(getApikey());
+        if (null != getApiKey()){
+            sb.append("&apiKey=").append(getApiKey());
         }
         if (null != getIsPublisherId()) {
             sb.append("&isPublisherId=").append(getIsPublisherId());
