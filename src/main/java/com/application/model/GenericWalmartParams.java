@@ -14,8 +14,7 @@ public class GenericWalmartParams {
     String upc = "035000521019";
     String ids = "744021327";
 
-    public GenericWalmartParams(String domain, String categoryAPI, String isPublisherId, String format, String apikey, String upc, String ids) {
-        this.domain = domain;
+    public GenericWalmartParams(String categoryAPI, String isPublisherId, String format, String apikey, String upc, String ids) {
         this.categoryAPI = categoryAPI;
         this.isPublisherId = isPublisherId;
         this.format = format;
@@ -79,7 +78,7 @@ public class GenericWalmartParams {
     public void setIds(String ids) {
         this.ids = ids;
     }
-    
+
 
     public String domainParams (){
         StringBuilder sb = new StringBuilder();

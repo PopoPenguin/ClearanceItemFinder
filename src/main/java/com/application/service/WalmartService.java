@@ -1,5 +1,6 @@
 package com.application.service;
 
+import com.application.model.GenericWalmartParams;
 import com.application.model.Item;
 import com.application.model.Items;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,11 +25,15 @@ public class WalmartService {
     @Autowired
     RestTemplate restTemplate;
 
-    public Items getItems(){
+    public Items getItems(String categoryAPI, String isPublisherId, String format, String apikey, String upc, String ids){
         String url = "http://api.walmartlabs.com/v1/feeds/clearance?format=json&apikey={apikey}&amp;categoryId=3944";
         Items fullResponse = restTemplate.getForObject(url , Items.class);
         return fullResponse;
         //return restTemplate.getForObject("http://api.walmartlabs.com/v1/feeds/clearance?format=json&apikey={apikey}&amp;categoryId=3944", Items.class);
+
+//        GenericWalmartParams genericWalmartParams = new GenericWalmartParams( categoryAPI, isPublisherId, format, apikey, upc, ids);
+//        return restTemplate.getForObject(genericWalmartParams.domainParams(), Items.class);
+
     }
 
 }
