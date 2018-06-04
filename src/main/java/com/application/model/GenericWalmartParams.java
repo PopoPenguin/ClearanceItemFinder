@@ -10,9 +10,9 @@ public class GenericWalmartParams {
     String categoryAPI = "/feeds/clearance";
     String isPublisherId;
     String format = "json";
-    String apiKey = "{apiKey}";
+    String apiKey;
     String upc = "035000521019";
-    String ids = "744021327";
+    String ids;
 
     public GenericWalmartParams(String categoryAPI, String isPublisherId, String format, String apiKey, String upc, String ids) {
         this.categoryAPI = categoryAPI;
@@ -83,7 +83,7 @@ public class GenericWalmartParams {
     public String domainParams (){
         StringBuilder sb = new StringBuilder();
         sb.append(getDomain()).append(getCategoryAPI());
-        if (null != getIds()) {
+        if ("/744021327" == getIds()) {
             sb.append(getIds());
         }
         if (null != getFormat()) {

@@ -1,5 +1,6 @@
 package com.application.controller;
 
+import com.application.model.ApiKey;
 import com.application.model.Item;
 import com.application.model.Items;
 import com.application.service.WalmartService;
@@ -23,10 +24,10 @@ public class WalmartController {
             @RequestParam (value = "categoryAPI", required = false, defaultValue = "/feeds/clearance")String categoryAPI,
             @RequestParam (value = "isPublisherId", required = false)String isPublisherId,
             @RequestParam (value = "format", required = false, defaultValue = "json")String format,
-            @RequestParam (value = "apiKey", required = true, defaultValue = "{apiKey}")String apiKey,
+            @RequestParam (value = "apiKey", defaultValue = "{apikey}") ApiKey apiKey,
             @RequestParam (value = "upc", required = false, defaultValue = "035000521019")String upc,
-            @RequestParam (value = "ids", required = false, defaultValue = "744021327")String ids
+            @RequestParam (value = "ids", required = false, defaultValue = "/744021327")String ids
     ) {
-        return service.getItems(categoryAPI, isPublisherId, format, apiKey, upc, ids);
+        return service.getItems(categoryAPI, isPublisherId, format, apiKey,upc, ids);
     }
 }
