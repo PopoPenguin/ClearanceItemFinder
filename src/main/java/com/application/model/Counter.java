@@ -11,4 +11,9 @@ public class Counter {
     private Integer currentCount;
     private Integer minusCount;
 
+    //current API key limits
+    //5 calls/second
+    //5,000 calls/day
+
+
 }
