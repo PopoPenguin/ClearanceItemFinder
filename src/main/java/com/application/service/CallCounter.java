@@ -17,6 +17,11 @@ public class CallCounter {
 
     public void TrackCount (Integer count){
         currentCount += count;
+        //count gets added to total count
+        //currentcount cannot exceed 5 /sec
+        //totalcount cannot exceed 5000/day
+        //reset totalcount at end of day
+
 
 
         return;
