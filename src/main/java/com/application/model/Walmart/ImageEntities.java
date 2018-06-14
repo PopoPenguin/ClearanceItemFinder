@@ -1,4 +1,4 @@
-package com.application.model;
+package com.application.model.Walmart;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

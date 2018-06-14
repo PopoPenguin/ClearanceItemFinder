@@ -1,4 +1,4 @@
-package com.application.model;
+package com.application.model.Walmart;
 
 /**
  * created by Jialor Cheung on 6/4/18

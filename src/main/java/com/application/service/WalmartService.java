@@ -1,20 +1,11 @@
 package com.application.service;
 
-import com.application.model.ApiKey;
-import com.application.model.GenericWalmartParams;
-import com.application.model.Item;
-import com.application.model.Items;
+import com.application.model.Walmart.ApiKey;
+import com.application.model.Walmart.GenericWalmartParams;
+import com.application.model.Walmart.Items;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.converter.HttpMessageConverter;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * created by Jialor Cheung on 5/20/18
